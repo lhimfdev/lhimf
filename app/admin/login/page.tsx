@@ -8,7 +8,6 @@ import { LockKeyhole, ShieldCheck } from "lucide-react";
 
 export default function AdminLoginPage() {
   const router = useRouter();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -16,7 +15,6 @@ export default function AdminLoginPage() {
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     setError("");
     setBusy(true);
 
@@ -59,7 +57,6 @@ export default function AdminLoginPage() {
         </div>
 
         <p className="admin-kicker">LHIMF / ADMINISTRATION</p>
-
         <h1 id="admin-login-title">Welcome back.</h1>
 
         <p className="admin-login-copy">
